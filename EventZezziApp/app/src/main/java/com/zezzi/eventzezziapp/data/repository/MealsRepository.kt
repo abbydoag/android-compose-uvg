@@ -11,4 +11,11 @@ class MealsRepository(private val webService: MealsWebService = MealsWebService(
             webService.getMeals()
         }
     }
+
+    suspend fun getRecipies(category: String):MealsRecipiesResponse {
+        return withContext(Dispatchers.IO) {
+            webService.getRecipiesByCategory(category)
+        }
+    }
+
 }
