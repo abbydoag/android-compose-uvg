@@ -53,6 +53,11 @@
                         modifier = Modifier.width(64.dp),
                         color = MaterialTheme.colorScheme.primary
                     )
+                    Text(
+                        text = "Espera un momento...",
+                        color = java.awt.Color.GRAY ,
+                        modifier = Modifier.padding(top = 8.dp)
+                    )
                 }
             } else {
                 LazyVerticalGrid(
